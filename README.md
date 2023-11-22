@@ -1,3 +1,6 @@
+[![c++](https://img.shields.io/badge/dialect-C%2B%2B-orange)](https://en.cppreference.com/w/cpp/compiler_support/14#C.2B.2B14_library_features)
+[![MIT LICENSE](https://img.shields.io/github/license/Yashsoni-1/lock_free_queue)](https://github.com/Yashsoni-1/lock_free_queue/blob/main/LICENSE)
+
 # C++ LOCK FREE DATA STRUCTURES
 
 In this project I'm working on some Lock Free DSs. These DSs are light weight with really simple APIs, which are almost same as the standard APIs. These DSs are almost 3x faster than their mutex based counterparts.
@@ -6,6 +9,8 @@ There are both SPSC(Single Producer and Single Consumer) and MPMC(Multiple Produ
 > NOTE: At the moment the queue and other DSs are meant for only [trivial](https://en.cppreference.com/w/cpp/named_req/TrivialType) data types.
 
 > NOTE: Above "DS" stands for data structure.
+
+> NOTE: All the conclusions below are based on the initial test performed locally. More extensive testing is to be done.
 
 ## FEATURES
 
@@ -54,9 +59,27 @@ The queue class provides following member functions:
 All the functions are similar to MPMC Queue above.
 
 ## mkw::spsc_stack - SPSC STACK 
+> Note: It is crashing right now.
 - This is a simple SPSC Lock Stack, based on bounded buffer based implementation.
 - Should be used only with one thread producing(pushing) and other one consuming(popping).
 - This is much more performant compared to its MPMC counterpart.
 - ### API
 All the functions are similar to MPMC Queue above.
-> Note: It is crashing right now.
+
+## Reference and Motivation
+- Introduction to Lock Free Programming - Tony van Eerd [link](https://youtu.be/RWCadBJ6wTk?si=outhGFJP-Gf4h6D0)
+- Implementing Lock Free Queue [link](https://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.53.8674&rep=rep1&type=pdf)
+- moodycamel::concurrent_queue [link](https://github.com/ikiller1/moodycamel-ConcurrentQueue.git)
+- LockFree [link](https://github.com/DNedic/lockfree.git)
+- Lock Free Queues [link](https://jbseg.medium.com/lock-free-queues-e48de693654b)
+
+## TODOs
+- Decrease Latency Of Data Structures.
+- Make API more robust.
+- Implement ring buffer based data structures.
+
+## Future Work
+- Add priority queue
+- Add Hashtable
+- Add list
+  
