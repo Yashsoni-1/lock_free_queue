@@ -61,7 +61,7 @@ All the functions are similar to MPMC Queue above.
 - This is a simple SPSC Lock Stack, based on bounded buffer based implementation.
 - Should be used only with one thread producing(pushing) and other one consuming(popping).
 - This is much more performant compared to its MPMC counterpart.
-- ### API
+### API
 All the functions are similar to MPMC Queue above.
 
 ## Reference and Motivation
