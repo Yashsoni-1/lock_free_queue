@@ -67,7 +67,7 @@ All the functions are similar to MPMC Queue above.
 ## Reference and Motivation
 - Introduction to Lock Free Programming - Tony van Eerd [link](https://youtu.be/RWCadBJ6wTk?si=outhGFJP-Gf4h6D0)
 - Implementing Lock Free Queue [link](https://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.53.8674&rep=rep1&type=pdf)
-- moodycamel::concurrent_queue [link](https://github.com/ikiller1/moodycamel-ConcurrentQueue.git)
+- moodycamel::concurrent_queue [link](https://github.com/max0x7ba/atomic_queue.git)
 - LockFree [link](https://github.com/DNedic/lockfree.git)
 - Lock Free Queues [link](https://jbseg.medium.com/lock-free-queues-e48de693654b)
 
