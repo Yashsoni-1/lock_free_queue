@@ -8,8 +8,6 @@ There are both SPSC(Single Producer and Single Consumer) and MPMC(Multiple Produ
 
 > NOTE: At the moment the queue and other DSs are meant for only [trivial](https://en.cppreference.com/w/cpp/named_req/TrivialType) data types.
 
-> NOTE: Above "DS" stands for data structure.
-
 > NOTE: All the conclusions below are based on the initial test performed locally. More extensive testing is to be done.
 
 ## FEATURES
